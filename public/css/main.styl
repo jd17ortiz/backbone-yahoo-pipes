@@ -1,0 +1,115 @@
+blue = #22BCE0
+orange = #DD4F24
+lighter_gray = #7A7A7A
+dark_gray = #444
+
+a
+	color orange
+
+body
+	background #E8E8E8
+	color dark_gray
+	font-family Arial
+	font-size 16px
+
+footer
+	background dark_gray
+	color rgba(white,0.5)
+	padding 1em 0
+	text-align center
+	width 100%
+
+
+header
+	background dark_gray
+	box-shadow 0 5px 0 rgba(0,0,0,0.2)
+	color white
+	overflow hidden
+	padding 0.5em
+	position relative
+	z-index 2
+	
+	.main-title
+		margin 0 15px 0 0
+
+nav
+	background blue
+	position relative
+
+	.menu
+		height 40px
+		line-height 40px
+		margin 0
+		padding 0
+		overflow-x auto
+		white-space nowrap
+
+
+.ajax-loader
+	img
+		position relative
+		left 50%
+		margin 20px 0 20px -44px
+	
+.posts
+	padding 0.5em
+
+	.post
+		background white
+		border-radius 0 0 0.5em 0.5em
+		box-shadow 2px 2px 10px rgba(black, 0.5)
+		color lighter_gray
+		margin-bottom 0.5em
+
+		
+		.details-post
+			&.extended
+				.details
+					height auto
+					padding-bottom 20px
+
+			.details
+				height 190px
+				margin-left 130px
+				
+				.description
+					height 92px
+					margin 12px 10px 0
+					overflow-y scroll
+					display none
+					
+					.more-details
+						color blue
+						font-weight bold
+					
+				.title
+					text-decoration none
+					
+					h2				
+						font-size 18px
+						font-style italic
+						margin 0
+						padding 0.5em 0.5em 0 0
+
+			.image
+				float left
+
+				img
+					height 160px
+					vertical-align top
+					width 120px
+
+@media screen and (min-width: 768px)
+	
+	.posts
+		.post
+			display inline-block
+			width 48%
+			vertical-align top
+			&:nth-child(odd)
+				margin-right 2%
+			
+			.details-post
+				.details
+					.description
+						height 108px
